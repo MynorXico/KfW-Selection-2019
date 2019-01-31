@@ -7,9 +7,9 @@ var ctx = document.getElementById("myAreaChart");
 var myLineChart = new Chart(ctx, {
   type: 'line',
   data: {
-    labels: ["Mar 1", "Mar 2", "Mar 3", "Mar 4", "Mar 5", "Mar 6", "Mar 7", "Mar 8", "Mar 9", "Mar 10", "Mar 11", "Mar 12", "Mar 13"],
+    labels: ["10-20", "20-30", "30-40", "40-50", "50-60", "60-70", "70-80", "80-90", "90-100"],
     datasets: [{
-      label: "Sessions",
+      label: "Económico",
       lineTension: 0.3,
       backgroundColor: "rgba(2,117,216,0.2)",
       borderColor: "rgba(2,117,216,1)",
@@ -20,7 +20,48 @@ var myLineChart = new Chart(ctx, {
       pointHoverBackgroundColor: "rgba(2,117,216,1)",
       pointHitRadius: 50,
       pointBorderWidth: 2,
-      data: [10000, 30162, 26263, 18394, 18287, 28682, 31274, 33259, 25849, 24159, 32651, 31984, 38451],
+      data: [10000, 30162, 26263, 18394, 18287, 28682, 31274, 33259, 25849],
+    },{
+      label: "Demográfico",
+      lineTension: 0.3,
+      backgroundColor: "rgba(117,117,216,0.2)",
+      borderColor: "rgba(117,117,216,1)",
+      pointRadius: 5,
+      pointBackgroundColor: "rgba(117,117,216,1)",
+      pointBorderColor: "rgba(255,255,255,0.8)",
+      pointHoverRadius: 5,
+      pointHoverBackgroundColor: "rgba(117,117,216,1)",
+      pointHitRadius: 50,
+      pointBorderWidth: 2,
+      data: [31274, 18287, 28682, 30162, 18287, 28682, 31274, 30162, Math.random()*100],
+    },
+    {
+      label: "Académico",
+      lineTension: 0.3,
+      backgroundColor: "rgba(117,117,216,0.2)",
+      borderColor: "rgba(117,117,216,1)",
+      pointRadius: 5,
+      pointBackgroundColor: "rgba(117,117,216,1)",
+      pointBorderColor: "rgba(255,255,255,0.8)",
+      pointHoverRadius: 5,
+      pointHoverBackgroundColor: "rgba(117,117,216,1)",
+      pointHitRadius: 50,
+      pointBorderWidth: 2,
+      data: [31274, 18287, 28682, 30162, 18287, 28682, 31274, 30162, 30162],
+    },
+    {
+      label: "Laboral",
+      lineTension: 0.3,
+      backgroundColor: "rgba(117,117,216,0.2)",
+      borderColor: "rgba(117,117,216,1)",
+      pointRadius: 5,
+      pointBackgroundColor: "rgba(117,117,216,1)",
+      pointBorderColor: "rgba(255,255,255,0.8)",
+      pointHoverRadius: 5,
+      pointHoverBackgroundColor: "rgba(117,117,216,1)",
+      pointHitRadius: 50,
+      pointBorderWidth: 2,
+      data: [31274, 18287, 28682, 30162, 18287, 28682, 31274, 30162, 30162],
     }],
   },
   options: {
@@ -48,7 +89,7 @@ var myLineChart = new Chart(ctx, {
       }],
     },
     legend: {
-      display: false
+      display: true
     }
   }
 });
