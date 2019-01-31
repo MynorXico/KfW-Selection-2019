@@ -1,0 +1,40 @@
+.bg-blue-url {
+	background: #082e71;
+	color: #fff;
+}
+
+.logo{
+	height: 3.6rem;
+	margin-left: 1.5rem;
+	margin-right: 1rem;
+	position: initial;
+    transition: transform .5s;
+}
+
+.logo:hover{
+	transform: scale(1.1);
+}
+
+
+.p-0{
+	padding-top: 0px;
+	padding-bottom: 0px;
+}
+
+.bg-color-blue-url{
+	background-color: rgba(8,46,113, 1);
+}
+
+.font-2{
+	font-size: 2em;
+}
+
+.vertical-middle{
+	vertical-align: super;
+	padding-right: 8px;
+}
+
+.logos-footer{
+	text-align: center;
+    margin-bottom: 5px;
+}
